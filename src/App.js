@@ -9,6 +9,7 @@ const Wrapper = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
+    overflow: auto;
 `;
 
 function App() {

@@ -97,6 +97,7 @@ const WebPlayback = (props) => {
 
     const [token, setToken] = useState("");
 
+    // Step 1 is to authenticate the user and receive a token
     useEffect(() => {
         async function getToken() {
             const response = await fetch("/auth/token");
@@ -107,9 +108,9 @@ const WebPlayback = (props) => {
         getToken();
     }, []);
 
+    // Step 2 is to give the web player control once the token has been created
     useEffect(() => {
-
-        if (token === '') {
+        if (token === "") {
             return;
         }
 
@@ -163,6 +164,7 @@ const WebPlayback = (props) => {
         };
     }, [token]);
 
+    // Volume control
     useEffect(() => {
         if (player === undefined) {
             return;
@@ -214,7 +216,7 @@ const WebPlayback = (props) => {
         setActive(false);
     };
 
-    // Set background image - testing atm
+    // Set background image
     useEffect(() => {
         props.background(current_track.album.images[0].url);
     }, [current_track]);
