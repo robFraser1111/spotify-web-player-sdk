@@ -1,6 +1,16 @@
-# Web Playback SDK Javascript Tutorial
+# Spotify Web Player
 
-This repository contains the source code for the [Web Playback SDK Guide](https://developer.spotify.com/documentation/web-playback-sdk/guide/).
+Built using the Spotify web playback SDK - https://developer.spotify.com/documentation/web-playback-sdk/guide/
+
+## Screenshots
+
+<img src="/public/screenshot-01.png?raw=true" alt="Spotify web player" />
+
+<img src="/public/screenshot-02.png?raw=true" alt="Spotify web player" />
+
+<img src="/public/screenshot-03.png?raw=true" alt="Spotify web player" width="320" />
+
+<img src="/public/screenshot-04.png?raw=true" alt="Spotify web player" width="320" />
 
 ## Using your own credentials
 
